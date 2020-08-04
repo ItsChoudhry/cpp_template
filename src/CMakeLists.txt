@@ -2,7 +2,9 @@
 add_subdirectory(sdl)
 add_subdirectory(imgui)
 
-# Generic test that uses conan libs
+add_library(thing_lib thing.cpp thing.hpp)
+target_link_libraries(thing_lib PRIVATE project_options)
+
 add_executable(intro main.cpp)
 target_link_libraries(
   intro
@@ -10,4 +12,6 @@ target_link_libraries(
           project_warnings
           CONAN_PKG::docopt.cpp
           CONAN_PKG::fmt
-          CONAN_PKG::spdlog)
+          CONAN_PKG::spdlog
+          thing_lib)
+

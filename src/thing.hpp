@@ -1,0 +1,1 @@
+int thing(int x);
