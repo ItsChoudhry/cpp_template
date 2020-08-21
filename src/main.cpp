@@ -5,8 +5,6 @@
 #include <docopt/docopt.h>
 #include <fmt/core.h>
 
-#include "thing.hpp"
-
 static constexpr auto USAGE =
   R"(Naval Fate.
 
