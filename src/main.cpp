@@ -1,11 +1,10 @@
-#include <functional>
 #include <iostream>
+#include <functional>
 
 #include <spdlog/spdlog.h>
-
 #include <docopt/docopt.h>
+#include <fmt/core.h>
 
-#include <iostream>
 #include "thing.hpp"
 
 static constexpr auto USAGE =

@@ -15,12 +15,11 @@ macro(run_conan)
 
   conan_cmake_run(
     REQUIRES
-    imgui-sfml/2.1@bincrafters/stable
     catch2/2.11.0
     docopt.cpp/0.6.2
     fmt/6.2.0
     spdlog/1.5.0
-    nlohmann_json/3.9.0
+#    nlohmann_json/3.9.0
     OPTIONS
     BASIC_SETUP
     CMAKE_TARGETS # individual targets to link to
