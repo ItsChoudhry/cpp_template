@@ -5,9 +5,9 @@
 add_library(thing_lib thing.cpp thing.hpp)
 target_link_libraries(thing_lib PRIVATE project_options)
 
-add_executable(intro main.cpp)
+add_executable(program main.cpp)
 target_link_libraries(
-  intro
+  program
   PRIVATE project_options
           project_warnings
           CONAN_PKG::docopt.cpp
