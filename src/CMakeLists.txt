@@ -1,6 +1,6 @@
 
-add_subdirectory(sdl)
-add_subdirectory(imgui)
+#add_subdirectory(sdl)
+#add_subdirectory(imgui)
 
 add_library(thing_lib thing.cpp thing.hpp)
 target_link_libraries(thing_lib PRIVATE project_options)
